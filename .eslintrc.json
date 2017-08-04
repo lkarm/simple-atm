@@ -1,0 +1,20 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "script"
+  },
+  "plugins": [
+    "prettier"
+  ],
+  "env": {
+    "es6": true
+  },
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "rules": {
+    "consistent-return": "warn",
+    "strict": "warn"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "simple-atm",
+  "version": "1.0.0",
+  "description": "A simple ATM application",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run lint --silent && jest --coverage --collectCoverageFrom=server/*",
+    "app": "node app.js",
+    "lint": "eslint server/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkarm/simple-atm.git"
+  },
+  "author": "Lisa Armstrong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lkarm/simple-atm/issues"
+  },
+  "homepage": "https://github.com/lkarm/simple-atm#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "redis": "^2.7.1"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "15.0.1",
+    "eslint-config-prettier": "2.3.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "5.0.1",
+    "eslint-plugin-prettier": "2.1.2",
+    "eslint-plugin-react": "7.1.0",
+    "jest": "20.0.4",
+    "mock-express-request": "^0.2.0",
+    "mock-express-response": "^0.2.1",
+    "prettier": "1.5.3",
+    "redis-mock": "^0.20.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/*-test.js"
+    ],
+    "moduleNameMapper": {
+      "redis": "<rootDir>/tests/server-unit/__mocks__/redis.js"
+    }
+  }
+}

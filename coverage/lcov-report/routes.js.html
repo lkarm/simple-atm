@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for routes.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> routes.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">70.91% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>39/55</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">67.39% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>31/46</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">67.39% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>31/46</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";
+&nbsp;
+const account = require('./account');
+const utils = require('./utils');
+&nbsp;
+/* Create a new account */
+exports.create = (req, resp) =&gt; {
+    let balance = 0;
+&nbsp;
+    // Verify correct parameters were given
+    if (!req.body || !req.body.account_id ) return resp.status(400).send('Request requires account_id.');
+    if(req.body.balance) {
+        balance = utils.getVerifiedBalance(req.body.balance)
+        if(!balance) return resp.status(400).send('Balance must be a positive number');
+    }
+    const accountID = req.body.account_id
+    // Verify account doesn't already exist before saving
+    account.getAccount(accountID, (result) =&gt; {
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (result) {
+<span class="cstat-no" title="statement not covered" >            return resp.status(400).send('Account already exists.');</span>
+        }
+        account.saveAccount(accountID, balance, <span class="fstat-no" title="function not covered" >(e</span>rr, res) =&gt; {
+<span class="cstat-no" title="statement not covered" >            if(err || res !== 'OK') {</span>
+<span class="cstat-no" title="statement not covered" >                return res.status(500).send('Error creating account. Try again later');</span>
+            }
+        });
+        return resp.status(201).send();
+    })
+    
+}
+&nbsp;
+/* Get details of the account */
+exports.get = (req, resp) =&gt; {
+    if (!req.params || !req.params.accountID ) return resp.status(400).send('Request requires account_id.');
+    account.getAccount(req.params.accountID, (result) =&gt; {
+        <span class="missing-if-branch" title="else path not taken" >E</span>if(!result) {
+            return resp.status(404).send(`Account ${req.params.accountID} not found.`)
+        }
+        const data = <span class="cstat-no" title="statement not covered" >{</span>
+            account_id: req.params.accountID,
+            balance: result
+        }
+<span class="cstat-no" title="statement not covered" >        return resp.send(data);</span>
+    });
+}
+&nbsp;
+/* Update an account */
+exports.update = (req, resp) =&gt; {
+    const accountID = req.params.accountID;
+    if (!req.params || !req.params.accountID ) return resp.status(400).send('Request requires account_id.');
+    // Validate that the right parameters were given
+    if (!req.body || !req.body.ammount ) return resp.status(400).send('"ammount" is a required input');
+    if (!req.body || !req.body.action ) return resp.status(400).send('"action" is a required input');
+    const ammount = req.body.ammount;
+    const action = req.body.action;
+    
+    // Validate that the inputs are valid
+    if (!utils.verifyActionInput(action)) return resp.status(400).send('action must either be "withdraw" or "deposit"');
+    const parsedAmmount = utils.getVerifiedBalance(ammount);
+    if(!parsedAmmount) return resp.status(400).send('Ammount must be a positive number');
+    
+    // Get current account balance
+    account.getAccount(accountID, (result) =&gt; {
+        let newBalance;
+        <span class="missing-if-branch" title="else path not taken" >E</span>if(!result) {
+            // If there was no result, account does not exist
+            return resp.status(404).send(`Account ${accountID} not found.`)
+        }
+&nbsp;
+        // Result comes back as a string so need to parse it back to a Float
+        const oldBalance = <span class="cstat-no" title="statement not covered" >parseFloat(result);</span>
+&nbsp;
+        // Update account balance
+<span class="cstat-no" title="statement not covered" >        if (action === 'withdraw') {</span>
+<span class="cstat-no" title="statement not covered" >            newBalance = oldBalance - parsedAmmount;</span>
+<span class="cstat-no" title="statement not covered" >            if (newBalance &lt; 0) <span class="cstat-no" title="statement not covered" >return resp.status(400).send('You cannot withdraw more than your current balance');</span></span>
+        } else {
+<span class="cstat-no" title="statement not covered" >            newBalance = oldBalance + parsedAmmount;</span>
+        }
+<span class="cstat-no" title="statement not covered" >        account.saveAccount(accountID, newBalance, <span class="fstat-no" title="function not covered" >(e</span>rr, res) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            if(err || res !== 'OK') {</span>
+<span class="cstat-no" title="statement not covered" >                return res.status(500).send('Error updating account. Try again later');</span>
+            }
+        });
+        const data = <span class="cstat-no" title="statement not covered" >{</span>
+            account_id: accountID,
+            balance: newBalance,
+        }
+<span class="cstat-no" title="statement not covered" >        return resp.send(data);</span>
+    });
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Aug 04 2017 14:47:17 GMT-0500 (CDT)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>
