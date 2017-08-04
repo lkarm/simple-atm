@@ -11,16 +11,16 @@ POST /account
 BODY
 {
     account_id: <Unique identifier for the account (PIN)>
-    balance: <optional staring balance>
+    balance: <optional starting balance>
 }
 
 RESPONSE
 
-201 : Account create successfully
+201 : Account created successfully
 400 : Bad request
 ```
 
-1. Get account details
+2. Get account details
 
 ```
 GET /account/:account_id
@@ -33,7 +33,7 @@ RESPONSE
 
 ```
 
-1. Update account information (i.e. withdraw, deposit)
+3. Update account information (i.e. withdraw, deposit)
 
 ```
 PUT /account/:account_id
