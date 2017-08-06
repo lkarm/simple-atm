@@ -1,0 +1,12 @@
+.actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown {
+  padding: .5rem;
+}
+
+.textinput {
+  padding-right: .5rem;
+}

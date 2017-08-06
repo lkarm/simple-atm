@@ -62,7 +62,18 @@ Once redis is running, then you run `npm run app` and get to it from localhost:3
 
 To run tests - `npm run test`
 
+### Technologies 
+
+The backend uses Node.js and Express with a Redis database
+
+
+The frontend uses React+Redux built with webpack
+
+
 ### Future Features
 * Get transaction history
 * Security to ensure only you are updating your account
 * Globalization and multiple currencies
+* Create Account button on UI
+* UI/UX styling
+* Client side unit testing

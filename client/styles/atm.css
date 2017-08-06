@@ -1,0 +1,13 @@
+.atm {
+  display: flex;
+  flex-direction: column;
+}
+
+.logout {
+  margin-top: 2rem;
+  max-width: 5rem;
+}
+
+.pininput {
+  padding-right: .5rem;
+}
