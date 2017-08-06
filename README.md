@@ -62,6 +62,8 @@ Once redis is running, then you run `npm run app` and get to it from localhost:3
 
 To run tests - `npm run test`
 
+(Tested on Chrome, Safari, and Firefox)
+
 ### Technologies 
 
 The backend uses Node.js and Express with a Redis database
